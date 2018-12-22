@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://assets/electronlogo.png" width="135" align="center">
+  <img src="assets/electronlogo.png" width="500" align="center">
   <br>
   <br>
 </p>
