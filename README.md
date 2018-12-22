@@ -5,9 +5,9 @@
 </p>
 
 
-## Minimal Electron, React and Webpack boilerplate
+## Electron, React and Webpack boilerplate
 
-Minimal Electron, React, PostCSS and Webpack boilerplate to help you get started with building your next app.
+Electron, React, PostCSS and Webpack boilerplate to help you get started with building your next app.
 
 ### Table of contents
 
@@ -35,10 +35,6 @@ yarn install
 #### Run the app
 
 ```
-npm run start
-```
-or
-```
 yarn start
 ```
 
@@ -54,7 +50,7 @@ yarn run package
 yarn run build
 ```
 
-#### Test the app (after `npm run build` || `yarn run build`)
+#### Test the app (after `yarn run build`)
 
 ```
 yarn run prod
