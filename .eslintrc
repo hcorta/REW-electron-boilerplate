@@ -1,0 +1,63 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "standard"
+  ],
+  "plugins": [
+    "babel",
+    "promise",
+    "react"
+  ],
+  "env": {
+    "browser": true,
+    "jasmine": true
+  },
+  "globals": {
+    "__LANG__": false,
+    "__DEV__": false,
+    "__STAGING__": false,
+    "__QA__": false,
+    "__PROD__": false,
+    "__DEMOS__": false,
+    "__TEST__": false,
+    "__YOUBORA__": false,
+    "__PREPROD__": false,
+    "__HK__": false,
+    "__INTEGRATION__": false,
+    "$": true,
+    "$YB": true,
+    "_": true,
+    "App": true,
+    "Backbone": true,
+    "ColorHash": true,
+    "Colors": true,
+    "ENV": true,
+    "Highcharts": true,
+    "echarts": true,
+    "Marionette": true,
+    "naturalSort": true,
+    "Radio": true,
+    "alert": true,
+    "ga": true,
+    "google": true,
+    "localStorage": true,
+    "moment": true,
+    "toastr": true,
+    "grecaptcha": true,
+    "i18next": true,
+    "T": true
+  },
+  "rules": {
+    "max-len": [
+      2,
+      200,
+      2
+    ],
+    "object-curly-spacing": [
+      2,
+      "always"
+    ],
+    "react/jsx-uses-react": 1,
+    "react/jsx-uses-vars": 2
+  }
+}
