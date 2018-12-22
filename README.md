@@ -4,16 +4,6 @@
   <br>
 </p>
 
-<p align="center">
-  <a href="https://david-dm.org/alexdevero/electron-react-webpack-boilerplate"><img alt="Dependency Status" src="https://david-dm.org/alexdevero/electron-react-webpack-boilerplate.svg?style=flat"></a>
-  <a href="https://david-dm.org/alexdevero/electron-react-webpack-boilerplate?type=dev"><img alt="devDependency Status" src="https://david-dm.org/alexdevero/electron-react-webpack-boilerplate/dev-status.svg?style=flat"></a>
-  <a href="http://opensource.org/licenses/MIT"><img alt="MIT License" src="https://img.shields.io/npm/l/express.svg"></a>
-</p>
-
-<p align="center">
-  <a href="https://alexdevero.com"><img alt="Built by DEVERO" src="https://img.shields.io/badge/built%20by-DEVERO-brightgreen.svg?colorB=d30320"></a>
-  <a href="https://github.com/alexdevero/electron-react-webpack-boilerplate/releases"><img alt="Current release" src="https://img.shields.io/github/release/alexdevero/electron-react-webpack-boilerplate.svg"></a>
-</p>
 
 ## Minimal Electron, React and Webpack boilerplate
 
@@ -31,17 +21,13 @@ Minimal Electron, React, PostCSS and Webpack boilerplate to help you get started
 #### Clone this repo
 
 ```
-git clone https://github.com/alexdevero/electron-react-webpack-boilerplate.git
+git clone https://github.com/hcorta/electronApp-boilerplate
 ```
 
 #### Install dependencies
 
 ```
-npm install
-```
-or
-```
-yarn
+yarn install
 ```
 
 ### Usage
@@ -59,29 +45,19 @@ yarn start
 #### Build the app (automatic)
 
 ```
-npm run package
-```
-or
-```
-yarn package
+yarn run package
 ```
 
 #### Build the app (manual)
 
 ```
-npm run build
-```
-or
-```
-yarn build
+yarn run build
 ```
 
 #### Test the app (after `npm run build` || `yarn run build`)
+
 ```
-npm run prod
-```
-```
-yarn prod
+yarn run prod
 ```
 
 ### Code of Conduct
@@ -90,4 +66,4 @@ yarn prod
 
 ### License
 
-MIT © [Alex Devero](https://alexdevero.com).
+MIT © [Hugo Corta](https://github.com/hcorta).
