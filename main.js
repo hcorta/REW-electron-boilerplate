@@ -54,8 +54,8 @@ const createWindow = () => {
   mainWindow.loadURL(indexPath)
 
   // Don't show until we are ready and loaded
-  mainWindow.once('ready-to-show', () => {
-    mainWindow.show()
+  mainWindow.once('ready-to-show', async () => {
+    await mainWindow.show()
 
     // Open the DevTools automatically if developing
     if (dev) {
@@ -89,9 +89,10 @@ app.on('window-all-closed', () => {
 app.on('activate', async () => {
   // On macOS it's common to re-create a window in the app when the
   // dock icon is clicked and there are no other windows open.
-  if (mainWindow === null) {
-    await createWindow()
-    const menuBuilder = new MenuBuilder(mainWindow)
-    menuBuilder.buildMenu()
-  }
+  if (mainWindow === null) await createWindow()
+})
+
+app.on('browser-window-created', () => {
+  const menuBuilder = new MenuBuilder(mainWindow)
+  menuBuilder.buildMenu()
 })
