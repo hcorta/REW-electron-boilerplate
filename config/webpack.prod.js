@@ -1,14 +1,13 @@
 const webpack = require('webpack')
 const path = require('path')
-const BabiliPlugin = require('babili-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const BabiliPlugin = require('babili-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 // Any directories you will be adding code/files into, need to be added to this array so webpack will pick them up
 const defaultInclude = path.resolve(__dirname, '../src')
 
 module.exports = {
-  // mode: 'production',
   module: {
     rules: [
       {
@@ -21,30 +20,9 @@ module.exports = {
         include: defaultInclude
       },
       {
-        enforce: 'pre',
-        test: /\.(js|jsx)$/,
-        exclude: /node_modules/,
-        include: defaultInclude,
-        use: {
-          loader: 'eslint-loader',
-          options: {
-            emitWarning: true
-          }
-        }
-      },
-      {
-        test: /\.(js|jsx)$/,
-        exclude: /node_modules/,
-        include: defaultInclude,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: [
-              '@babel/env',
-              '@babel/react'
-            ]
-          }
-        }
+        test: /\.jsx?$/,
+        use: [{ loader: 'babel-loader' }],
+        include: defaultInclude
       },
       {
         test: /\.(jpe?g|png|gif)$/,

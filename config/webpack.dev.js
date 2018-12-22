@@ -15,9 +15,28 @@ module.exports = {
         include: defaultInclude
       },
       {
-        test: /\.jsx?$/,
-        use: [{ loader: 'babel-loader' }],
-        include: defaultInclude
+        enforce: 'pre',
+        test: /\.(js|jsx)$/,
+        include: defaultInclude,
+        use: {
+          loader: 'eslint-loader',
+          options: {
+            emitWarning: true
+          }
+        }
+      },
+      {
+        test: /\.(js|jsx)$/,
+        include: defaultInclude,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: [
+              '@babel/env',
+              '@babel/react'
+            ]
+          }
+        }
       },
       {
         test: /\.(jpe?g|png|gif)$/,

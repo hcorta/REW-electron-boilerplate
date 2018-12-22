@@ -6,33 +6,26 @@
   "private": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/alexdevero/electron-react-webpack-boilerplate.git"
+    "url": "https://github.com/hcorta/electronApp-boilerplate"
   },
   "homepage": "",
   "author": {
-    "name": "Alex Devero",
-    "email": "deveroalex@gmail.com",
-    "url": "https://github.com/alexdevero"
+    "name": "Hugo Corta",
+    "email": "corta.hugo@gmail.com",
+    "url": "https://github.com/hcorta"
   },
   "keywords": [
-    "app",
     "boilerplate",
     "electron",
-    "open",
-    "open-source",
-    "postcss",
     "react",
-    "reactjs",
-    "source",
     "webpack"
   ],
   "main": "main.js",
   "scripts": {
-    "prod": "webpack --mode production --config=./config/webpack.build.config.js && electron --noDevServer .",
-    "start": "webpack-dev-server --hot --host 0.0.0.0 --config=./config/webpack.dev.config.js --mode development",
-    "build": "webpack --config webpack.build.config.js --mode production",
-    "package": "npm run build",
-    "postpackage": "electron-packager ./ --out=./builds"
+    "prod": "webpack --mode production --config config/webpack.prod.js && electron --noDevServer .",
+    "start": "webpack-dev-server --hot --host 0.0.0.0 --config config/webpack.dev.js --mode development",
+    "build": "webpack --config config/webpack.prod.js --mode production",
+    "package": "yarn run build && electron-packager ./ --out=./builds"
   },
   "dependencies": {
     "react": "^16.7.0",
