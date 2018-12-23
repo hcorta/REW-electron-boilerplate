@@ -43,6 +43,8 @@ $ cd rew-electron-boilerplate
 $ yarn
 ```
 
+<br>
+
 Inside the `rew-electron-boilerplate` folder, it will generate the initial project structure and install the transitive dependencies:
 
 ```
@@ -89,6 +91,7 @@ To package apps for the local platform:
 $ yarn run package
 ```
 
+<br>
 ## Contributing
 **Working on your first Pull Request?** You can learn how from this *free* series [How to Contribute to an Open Source Project on GitHub](https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github)
 
@@ -99,4 +102,4 @@ $ yarn run package
 
 ## License
 
-rew-electron-boilerplate is open source software licensed as MIT © [Hugo Corta](https://github.com/hcorta).
+**rew-electron-boilerplate** is open source software licensed as MIT © [Hugo Corta](https://github.com/hcorta).
