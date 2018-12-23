@@ -13,7 +13,7 @@ A minimal jump-start boilerplate based on Electron + Webpack + React for buildin
   <img src="public/img/screenshot.png" width="100%" align="center">
 </p>
 <br>
-<br>
+
 
 ## Table of Contents
 
@@ -22,6 +22,8 @@ A minimal jump-start boilerplate based on Electron + Webpack + React for buildin
 * [Packaging for Production](#packaging-for-production)
 * [Code of Conduct](#code-of-conduct)
 * [License](#license)
+
+<br>
 
 ## Install
 
