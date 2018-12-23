@@ -26,12 +26,11 @@ A minimal jump-start boilerplate based on Electron + Webpack + React for buildin
 ## Table of Contents
 
 * [Install](#install)
+* [Structure](#structure)
 * [Start Development](#start-development)
 * [Packaging for Production](#packaging-for-production)
 * [Code of Conduct](#code-of-conduct)
 * [License](#license)
-
-<br>
 
 ## Install
 
@@ -44,6 +43,27 @@ And then install the dependencies with yarn.
 ```
 $ cd your-project-name
 $ yarn
+```
+
+## Structure
+
+The basic structure of the project is given in the following way:
+
+```
+├── demo/
+│   └── index.html
+├── dist/
+│   ├── jquery.boilerplate.js
+│   └── jquery.boilerplate.min.js
+├── src/
+│   ├── jquery.boilerplate.coffee
+│   └── jquery.boilerplate.js
+├── .editorconfig
+├── .gitignore
+├── .jshintrc
+├── .travis.yml
+├── Gruntfile.js
+└── package.json
 ```
 
 ## Starting Development
