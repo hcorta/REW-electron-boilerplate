@@ -1,12 +1,12 @@
 {
-  "name": "electron-react-webpack-boilerplate",
-  "version": "1.2.6",
-  "description": "Minimal Electron, React, PostCSS and Webpack boilerplate to help you get started with building your next app.",
+  "name": "REW Electron Boilerplate",
+  "version": "1.0.0",
+  "description": "A minimal jump-start boilerplate based on Electron + Webpack + React for building Cross-Platform Desktop Apps",
   "license": "MIT",
   "private": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/hcorta/electronApp-boilerplate"
+    "url": "https://github.com/hcorta/REW-electron-boilerplate"
   },
   "homepage": "",
   "author": {
@@ -27,8 +27,6 @@
     "build": "webpack --config config/webpack.prod.js --mode production",
     "test": "yarn run build",
     "package": "yarn run build && electron-packager . electronApp  --out=builds/osx --platform=darwin --arch=x64 --icon=public/img/app-icon/mac/app.icns --overwrite"
-
-    
   },
   "dependencies": {
     "react": "^16.7.0",

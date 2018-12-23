@@ -1,23 +1,33 @@
-<p align="center">
+<div align="center">
   <img src="public/img/logo.png" width="100%" align="center">
-</p>
+  <p>A minimal jump-start boilerplate based on Electron + Webpack + React for building Cross-Platform Desktop Apps</p>
+</div>
 
+<br>
 
 <div align="center">
 
-[![Build Status](https://travis-ci.com/hcorta/REW-electron-boilerplate.svg?branch=master)](https://travis-ci.com/hcorta/REW-electron-boilerplate)
-[![dependencies Status](https://david-dm.org/hcorta/REW-electron-boilerplate/status.svg?style=flat-square)](https://david-dm.org/hcorta/REW-electron-boilerplate)
-[![devDependencies Status](https://david-dm.org/hcorta/REW-electron-boilerplate/dev-status.svg?style=flat-square)](https://david-dm.org/hcorta/REW-electron-boilerplate?type=dev)
+  [![Build Status](https://travis-ci.com/hcorta/REW-electron-boilerplate.svg?branch=master)](https://travis-ci.com/hcorta/REW-electron-boilerplate)
 
-A minimal jump-start boilerplate based on Electron + Webpack + React for building Cross-Platform Desktop Apps
+  [![dependencies Status](https://david-dm.org/hcorta/REW-electron-boilerplate/status.svg?style=flat-square)](https://david-dm.org/hcorta/REW-electron-boilerplate)
 
-<p align="center">
-  <img src="public/img/screenshot.png" width="100%" align="center">
-</p>
-<br>
+  [![devDependencies Status](https://david-dm.org/hcorta/REW-electron-boilerplate/dev-status.svg?style=flat-square)](https://david-dm.org/hcorta/REW-electron-boilerplate?type=dev)
+
+  [![License MIT](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+
+  [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+
+
+  A minimal jump-start boilerplate based on Electron + Webpack + React for building Cross-Platform Desktop Apps
+
+  <p align="center">
+    <img src="public/img/screenshot.png" width="100%" align="center">
+  </p>
+  <br>
 
 </div>
 
+***
 ## Table of Contents
 
 * [Install](#install)
@@ -36,25 +46,14 @@ git clone https://github.com/hcorta/REW-electron-boilerplate
 
 And then install the dependencies with yarn.
 ```
-$ cd your-project-name
+$ cd REW-electron-boilerplate
 $ yarn
 ```
 
-## Structure
-
-The basic structure of the project is given in the following way:
+Inside the `REW-electron-boilerplate` folder, it will generate the initial project structure and install the transitive dependencies:
 
 ```
-├── config/
-│   ├── webpack.dev.js
-│   └── webpack.prod.js
-├── dist/
-│   ├── jquery.boilerplate.js
-│   └── jquery.boilerplate.min.js
-├── src/
-│   ├── App.css
-│   ├── App.js
-│   └── index.js
+REW-electron-boilerplate
 ├── .babel.rc
 ├── .eslintrc
 ├── .gitignore
@@ -65,7 +64,19 @@ The basic structure of the project is given in the following way:
 ├── postcss.config.js
 ├── README.md
 └── yarn.lock
+├── config/
+│   ├── webpack.dev.js
+│   └── webpack.prod.js
+├── dist/
+│   ├── jquery.boilerplate.js
+│   └── jquery.boilerplate.min.js
+└── src
+    ├── App.css
+    ├── App.js
+    └── index.js
 ```
+No configuration or complicated folder structures, just the files you need to build your app.
+
 
 ## Starting Development
 
@@ -83,6 +94,9 @@ To package apps for the local platform:
 $ yarn run package
 ```
 
+## Contributing
+**Working on your first Pull Request?** You can learn how from this *free* series [How to Contribute to an Open Source Project on GitHub](https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github)
+
 
 ## Code of Conduct
 
@@ -90,4 +104,4 @@ $ yarn run package
 
 ## License
 
-MIT © [Hugo Corta](https://github.com/hcorta).
+REW-electron-boilerplate is open source software licensed as MIT © [Hugo Corta](https://github.com/hcorta).
