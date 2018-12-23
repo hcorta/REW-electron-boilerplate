@@ -1,6 +1,8 @@
 <p align="center">
   <img src="public/img/logo.png" width="500" align="center">
 </p>
+<br>
+<br>
 
 
 # REW - Electron, React and Webpack boilerplate
@@ -10,6 +12,8 @@ A minimal jump-start boilerplate based on Electron + Webpack + React for buildin
 <p align="center">
   <img src="public/img/screenshot.png" width="100%" align="center">
 </p>
+<br>
+<br>
 
 ## Table of Contents
 
