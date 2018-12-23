@@ -1,65 +1,58 @@
 <p align="center">
-  <img src="assets/electronlogo.png" width="500" align="center">
-  <br>
-  <br>
+  <img src="public/img/logo.png" width="500" align="center">
 </p>
 
 
-## Electron, React and Webpack boilerplate
+# REW - Electron, React and Webpack boilerplate
 
-Electron, React, PostCSS and Webpack boilerplate to help you get started with building your next app.
+A minimal jump-start boilerplate based on Electron + Webpack + React for building Cross-Platform Desktop Apps
 
-### Table of contents
+<p align="center">
+  <img src="public/img/screenshot.png" width="100%" align="center">
+</p>
+
+## Table of Contents
 
 * [Install](#install)
-* [Usage](#usage)
+* [Start Development](#start-development)
+* [Packaging for Production](#packaging-for-production)
 * [Code of Conduct](#code-of-conduct)
 * [License](#license)
 
-### Install
+## Install
 
-#### Clone this repo
-
+First, clone the repo via git:
 ```
-git clone https://github.com/hcorta/electronApp-boilerplate
-```
-
-#### Install dependencies
-
-```
-yarn install
+git clone https://github.com/hcorta/REW-electron-boilerplate
 ```
 
-### Usage
-
-#### Run the app
-
+And then install the dependencies with yarn.
 ```
-yarn start
+$ cd your-project-name
+$ yarn
 ```
 
-#### Build the app (automatic)
+## Start Development
+
+Start the app in the dev environment. This starts the renderer process in hot-module-replacement mode and starts a webpack dev server that sends hot updates to the renderer process:
 
 ```
-yarn run package
+$ yarn start
 ```
 
-#### Build the app (manual)
+## Packaging for Production
+
+To package apps for the local platform:
 
 ```
-yarn run build
+$ yarn run package
 ```
 
-#### Test the app (after `yarn run build`)
 
-```
-yarn run prod
-```
+## Code of Conduct
 
-### Code of Conduct
+[Contributor Code of Conduct](public/docs/CODE_OF_CONDUCT.md). By participating in this project you agree to abide by its terms.
 
-[Contributor Code of Conduct](code-of-conduct.md). By participating in this project you agree to abide by its terms.
-
-### License
+## License
 
 MIT © [Hugo Corta](https://github.com/hcorta).

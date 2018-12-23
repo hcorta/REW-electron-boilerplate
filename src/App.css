@@ -38,15 +38,17 @@ time, mark, audio, video {
   align-items: center;
   font-family: 'Open Sans', sans-serif;
   font-size: .85em;
+  text-align: center;
 }
 
 #App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 30vh;
+  height: 20vh;
+  margin-bottom: 3rem;
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 @keyframes App-logo-spin {

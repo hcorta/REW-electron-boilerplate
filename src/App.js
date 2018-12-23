@@ -8,8 +8,8 @@ class App extends React.Component {
     return (
       <div id="App">
         <img id="App-logo" src={Logo}></img>
-        <h1>electronApp-boilerplate</h1>
-        <p>I hope you enjoy using basic-electron-react-boilerplate to start your dev off right!</p>
+        <h1>REW-Electron-Boilerplate</h1>
+        <p>A jump-start boilerplate based on Electron + Webpack + React for building Cross-Platform Desktop Apps</p>
       </div>
     )
   }
