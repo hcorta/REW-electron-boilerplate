@@ -19,7 +19,6 @@
 </div>
 
 ***
-<br>
 
 ## Table of Contents
 
@@ -29,6 +28,8 @@
 * [Packaging for Production](#packaging-for-production)
 * [Code of Conduct](#code-of-conduct)
 * [License](#license)
+
+<br>
 
 ## Install
 
@@ -70,8 +71,7 @@ rew-electron-boilerplate
     ├── App.js
     └── index.js
 ```
-No configuration or complicated folder structures, just the files you need to build your app.
-
+No configuration needed along with the files you need to build your app.
 
 <br>
 
@@ -82,6 +82,8 @@ Start the app in the dev environment. This starts the renderer process in hot-mo
 ```
 $ yarn start
 ```
+
+<br>
 
 ## Packaging for Production
 
