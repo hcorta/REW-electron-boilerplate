@@ -1,5 +1,5 @@
 import './App.css'
-import Logo from '../public/logo.png'
+import Logo from '../public/img/logo.png'
 
 import React from 'react'
 
