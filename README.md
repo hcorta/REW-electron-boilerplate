@@ -1,12 +1,14 @@
 <p align="center">
-  <img src="public/img/logo.png" width="500" align="center">
+  <img src="public/img/logo.png" width="400" align="center">
 </p>
 <br>
 <br>
 
-# REW - Electron, React and Webpack boilerplate
+
 
 <div align="center">
+
+<h1>REW Boilerplate - Electron, React and Webpack App</h1>
 
 [![Build Status](https://travis-ci.com/hcorta/REW-electron-boilerplate.svg?branch=master)](https://travis-ci.com/hcorta/REW-electron-boilerplate)
 [![dependencies Status](https://david-dm.org/hcorta/REW-electron-boilerplate/status.svg?style=flat-square)](https://david-dm.org/hcorta/REW-electron-boilerplate)
