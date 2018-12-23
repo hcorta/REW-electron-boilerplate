@@ -10,9 +10,6 @@
 [![dependencies Status](https://david-dm.org/hcorta/REW-electron-boilerplate/status.svg?style=flat-square)](https://david-dm.org/hcorta/REW-electron-boilerplate)
 [![devDependencies Status](https://david-dm.org/hcorta/REW-electron-boilerplate/dev-status.svg?style=flat-square)](https://david-dm.org/hcorta/REW-electron-boilerplate?type=dev)
 
-
-[![Github Tag][github-tag-image]][github-tag-url]
-
 A minimal jump-start boilerplate based on Electron + Webpack + React for building Cross-Platform Desktop Apps
 
 <p align="center">
