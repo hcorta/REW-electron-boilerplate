@@ -2,23 +2,15 @@
   <img src="public/img/logo.png" width="100%" align="center">
   <p>A minimal jump-start boilerplate based on Electron + Webpack + React for building Cross-Platform Desktop Apps</p>
 </div>
-
 <br>
 
 <div align="center">
 
   [![Build Status](https://travis-ci.com/hcorta/REW-electron-boilerplate.svg?branch=master)](https://travis-ci.com/hcorta/REW-electron-boilerplate)
-
-  [![dependencies Status](https://david-dm.org/hcorta/REW-electron-boilerplate/status.svg?style=flat-square)](https://david-dm.org/hcorta/REW-electron-boilerplate)
-
-  [![devDependencies Status](https://david-dm.org/hcorta/REW-electron-boilerplate/dev-status.svg?style=flat-square)](https://david-dm.org/hcorta/REW-electron-boilerplate?type=dev)
-
-  [![License MIT](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://opensource.org/licenses/MIT)
-
-  [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
-
-
-  A minimal jump-start boilerplate based on Electron + Webpack + React for building Cross-Platform Desktop Apps
+  [![dependencies Status](https://david-dm.org/hcorta/REW-electron-boilerplate/status.svg)](https://david-dm.org/hcorta/REW-electron-boilerplate)
+  [![devDependencies Status](https://david-dm.org/hcorta/REW-electron-boilerplate/dev-status.svg)](https://david-dm.org/hcorta/REW-electron-boilerplate?type=dev)
+  [![License MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+  [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
   <p align="center">
     <img src="public/img/screenshot.png" width="100%" align="center">
