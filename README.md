@@ -19,6 +19,8 @@
 </div>
 
 ***
+<br>
+
 ## Table of Contents
 
 * [Install](#install)
@@ -68,6 +70,8 @@ rew-electron-boilerplate
 ```
 No configuration or complicated folder structures, just the files you need to build your app.
 
+
+<br>
 
 ## Starting Development
 
