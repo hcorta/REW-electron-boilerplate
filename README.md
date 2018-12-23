@@ -2,7 +2,6 @@
   <img src="public/img/logo.png" width="100%" align="center">
   <p>A minimal jump-start boilerplate based on Electron + Webpack + React for building Cross-Platform Desktop Apps</p>
 </div>
-<br>
 
 <div align="center">
 
@@ -12,10 +11,10 @@
   [![License MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
   [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
+  <br>
   <p align="center">
     <img src="public/img/screenshot.png" width="100%" align="center">
   </p>
-  <br>
 
 </div>
 
@@ -33,19 +32,19 @@
 
 First, clone the repo via git:
 ```
-git clone https://github.com/hcorta/REW-electron-boilerplate
+git clone https://github.com/hcorta/rew-electron-boilerplate
 ```
 
 And then install the dependencies with yarn.
 ```
-$ cd REW-electron-boilerplate
+$ cd rew-electron-boilerplate
 $ yarn
 ```
 
-Inside the `REW-electron-boilerplate` folder, it will generate the initial project structure and install the transitive dependencies:
+Inside the `rew-electron-boilerplate` folder, it will generate the initial project structure and install the transitive dependencies:
 
 ```
-REW-electron-boilerplate
+rew-electron-boilerplate
 ├── .babel.rc
 ├── .eslintrc
 ├── .gitignore
@@ -96,4 +95,4 @@ $ yarn run package
 
 ## License
 
-REW-electron-boilerplate is open source software licensed as MIT © [Hugo Corta](https://github.com/hcorta).
+rew-electron-boilerplate is open source software licensed as MIT © [Hugo Corta](https://github.com/hcorta).

@@ -1,5 +1,5 @@
 {
-  "name": "REW Electron Boilerplate",
+  "name": "rew-electron-boilerplate",
   "version": "1.0.0",
   "description": "A minimal jump-start boilerplate based on Electron + Webpack + React for building Cross-Platform Desktop Apps",
   "license": "MIT",
