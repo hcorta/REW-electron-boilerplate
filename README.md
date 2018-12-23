@@ -1,14 +1,9 @@
 <p align="center">
   <img src="public/img/logo.png" width="400" align="center">
 </p>
-<br>
-<br>
-
 
 
 <div align="center">
-
-<h1>REW Boilerplate - Electron, React and Webpack App</h1>
 
 [![Build Status](https://travis-ci.com/hcorta/REW-electron-boilerplate.svg?branch=master)](https://travis-ci.com/hcorta/REW-electron-boilerplate)
 [![dependencies Status](https://david-dm.org/hcorta/REW-electron-boilerplate/status.svg?style=flat-square)](https://david-dm.org/hcorta/REW-electron-boilerplate)
@@ -50,20 +45,26 @@ $ yarn
 The basic structure of the project is given in the following way:
 
 ```
-├── demo/
-│   └── index.html
+├── config/
+│   ├── webpack.dev.js
+│   └── webpack.prod.js
 ├── dist/
 │   ├── jquery.boilerplate.js
 │   └── jquery.boilerplate.min.js
 ├── src/
-│   ├── jquery.boilerplate.coffee
-│   └── jquery.boilerplate.js
-├── .editorconfig
+│   ├── App.css
+│   ├── App.js
+│   └── index.js
+├── .babel.rc
+├── .eslintrc
 ├── .gitignore
-├── .jshintrc
 ├── .travis.yml
-├── Gruntfile.js
-└── package.json
+├── LICENSE
+├── main.js
+├── package.json
+├── postcss.config.js
+├── README.md
+└── yarn.lock
 ```
 
 ## Starting Development
