@@ -1,7 +1,6 @@
 
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css?family=Overpass+Mono:300,400,600,700');
-@import url('https://fonts.googleapis.com/css?family=Barlow:200,400,500,600,700|PT+Sans:400,400i,700,700i|IBM+Plex+Mono:400,500');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
 
 
 * {
@@ -30,10 +29,32 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
-body {
-  font-family: 'Barlow', sans-serif;
-  font-size: .9em;
-  line-height: 1.6;
-  transition: background 1s ease-in-out;
-  color: #808080;
+#App {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: .85em;
 }
+
+#App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 30vh;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+

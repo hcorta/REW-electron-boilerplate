@@ -1,11 +1,11 @@
 const { app, Menu, shell, BrowserWindow } = require('electron')
 
 class MenuBuilder {
-  constructor() {
+  constructor () {
     this.mainWindow = BrowserWindow
   }
 
-  buildMenu() {
+  buildMenu () {
     if (
       process.env.NODE_ENV === 'development' ||
       process.env.DEBUG_PROD === 'true'
