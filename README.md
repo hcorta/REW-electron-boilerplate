@@ -7,9 +7,13 @@
 
 # REW - Electron, React and Webpack boilerplate
 
+<div align="center">
+
 [![Build Status](https://travis-ci.com/hcorta/REW-electron-boilerplate.svg?branch=master)](https://travis-ci.com/hcorta/REW-electron-boilerplate)
 [![dependencies Status](https://david-dm.org/hcorta/REW-electron-boilerplate/status.svg?style=flat-square)](https://david-dm.org/hcorta/REW-electron-boilerplate)
 [![devDependencies Status](https://david-dm.org/hcorta/REW-electron-boilerplate/dev-status.svg?style=flat-square)](https://david-dm.org/hcorta/REW-electron-boilerplate?type=dev)
+
+<div>
 
 A minimal jump-start boilerplate based on Electron + Webpack + React for building Cross-Platform Desktop Apps
 
