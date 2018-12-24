@@ -3,7 +3,7 @@
   <p>A minimal jump-start boilerplate based on Electron + Webpack + React for building Cross-Platform Desktop Apps</p>
 </div>
 
-<div align="center" style="display: flex; justify-content: space-evenly">
+<div align="center">
 
   [![Build Status](https://travis-ci.com/hcorta/REW-electron-boilerplate.svg?branch=master)](https://travis-ci.com/hcorta/REW-electron-boilerplate)
   [![dependencies Status](https://david-dm.org/hcorta/REW-electron-boilerplate/status.svg)](https://david-dm.org/hcorta/REW-electron-boilerplate)
@@ -13,9 +13,7 @@
 
 </div>
 
-<br>
-
-<p align="center" style="box-shadow:0px 4px 10px rgba(0,0,0,0.35)">
+<p align="center" style="box-shadow:0px 4px 10px rgba(0,0,0,0.5)">
   <img src="public/img/screenshot.png" width="100%" align="center">
 </p>
 
@@ -23,6 +21,7 @@
 
 ## Table of Contents
 
+* [Overview](#overview)
 * [Install](#install)
 * [Start Development](#start-development)
 * [Packaging for Production](#packaging-for-production)
@@ -42,22 +41,18 @@ The primary aim of electron-webpack is to eliminate all preliminary setup with o
 
 Create a directory of your choice, and copy template using curl:
 
-```
-$ mkdir my-project && cd my-project
-curl -fsSL https://github.com/electron-userland/electron-webpack-quick-start/archive/master.tar.gz | tar -xz --strip-components 1
-```
 
 
 or copy template using git clone:
 
 ```
-git clone https://github.com/hcorta/rew-electron-boilerplate
-$ cd rew-electron-boilerplate
+git clone https://github.com/hcorta/rew-electron-boilerplate YOUR_PROJECT_NAME
+$ cd YOUR_PROJECT_NAME
 ```
 
 <br>
 
-And then install the dependencies with `yarn` *(recommended)*.
+And then install the dependencies with **`yarn`** *(recommended)*.
 
 ```
 $ yarn
@@ -65,10 +60,10 @@ $ yarn
 
 <br>
 
-After completing this steps, you will find this initial project structure:
+After completing this steps, you will find the following project structure. No configuration needed, just the files you need to build your app.
 
 ```
-root
+YOUR_PROJECT_NAME
 ├── .babel.rc
 ├── .eslintrc
 ├── .gitignore
@@ -91,7 +86,6 @@ root
     └── index.js
 ```
 
-Just the files you need to build your app with no configuration needed.
 
 <br>
 
@@ -110,7 +104,7 @@ $ yarn start
 To package apps for the local platform:
 
 ```
-$ yarn run package
+$ yarn package
 ```
 
 <br>
