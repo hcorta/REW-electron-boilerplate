@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="public/img/logo.png" width="100%" align="center">
+  <img src="public/img/rew-header.png" width="100%" align="center">
   <p>A minimal jump-start boilerplate based on Electron + Webpack + React for building Cross-Platform Desktop Apps</p>
 </div>
 
@@ -39,15 +39,11 @@ The primary aim of electron-webpack is to eliminate all preliminary setup with o
 
 ## Install
 
-Create a directory of your choice, and copy template using curl:
-
-
-
-or copy template using git clone:
+Create a directory of your choice, and download the repo using git clone:
 
 ```
 git clone https://github.com/hcorta/rew-electron-boilerplate YOUR_PROJECT_NAME
-$ cd YOUR_PROJECT_NAME
+cd YOUR_PROJECT_NAME
 ```
 
 <br>
@@ -55,7 +51,7 @@ $ cd YOUR_PROJECT_NAME
 And then install the dependencies with **`yarn`** *(recommended)*.
 
 ```
-$ yarn
+yarn
 ```
 
 <br>
@@ -86,7 +82,6 @@ YOUR_PROJECT_NAME
     └── index.js
 ```
 
-
 <br>
 
 ## Starting Development
@@ -94,17 +89,17 @@ YOUR_PROJECT_NAME
 Start the app in the dev environment. This starts the renderer process in hot-module-replacement mode and starts a webpack dev server that sends hot updates to the renderer process:
 
 ```
-$ yarn start
+yarn start
 ```
 
 <br>
 
 ## Packaging for Production
 
-To package apps for the local platform:
+To package the app for the local platform:
 
 ```
-$ yarn package
+yarn package
 ```
 
 <br>

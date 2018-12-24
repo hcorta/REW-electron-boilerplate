@@ -2,7 +2,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
 
-
 * {
   margin: 0;
   box-sizing: border-box;
@@ -39,24 +38,5 @@ time, mark, audio, video {
   font-family: 'Open Sans', sans-serif;
   font-size: .85em;
   text-align: center;
-}
-
-#App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 20vh;
-  margin-bottom: 3rem;
-}
-
-h1 {
-  font-size: 2rem;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
 

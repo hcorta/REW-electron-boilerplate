@@ -1,6 +1,5 @@
 import './App.css'
-import Logo from '../public/img/logo.png'
-import ReactIcon from '../public/img/react-icon.png'
+import RewLogo from '../public/img/rew-header.png'
 
 import React, { Component } from 'react'
 
@@ -8,9 +7,8 @@ export default class App extends Component {
   render () {
     return (
       <div id="App">
-        <img src={ReactIcon} id="App-logo"/>
+        <img src={RewLogo} style={{ width: '80%' }}/>
         <p>Enjoy your development!</p>
-        {/* <img src={Logo} style={{ width: '80%' }}/> */}
       </div>
     )
   }
