@@ -1,7 +1,7 @@
 'use strict'
 
 // Import parts of electron to use
-const { app, BrowserWindow } = require('electron')
+const { app, BrowserWindow, globalShortcut } = require('electron')
 const path = require('path')
 const url = require('url')
 const MenuBuilder = require('./electron/menu')
@@ -9,6 +9,7 @@ const MenuBuilder = require('./electron/menu')
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
 let mainWindow
+let menu
 
 // Keep a reference for dev mode
 let dev = false
@@ -24,9 +25,9 @@ if (process.platform === 'win32') {
   app.commandLine.appendSwitch('force-device-scale-factor', '1')
 }
 
-const createWindow = () => {
+const createWindow = async () => {
   // Create the browser window.
-  mainWindow = new BrowserWindow({
+  mainWindow = await new BrowserWindow({
     width: 1024,
     height: 768,
     show: false,
@@ -54,8 +55,8 @@ const createWindow = () => {
   mainWindow.loadURL(indexPath)
 
   // Don't show until we are ready and loaded
-  mainWindow.once('ready-to-show', async () => {
-    await mainWindow.show()
+  mainWindow.once('ready-to-show', () => {
+    mainWindow.show()
 
     // Open the DevTools automatically if developing
     if (dev) {
@@ -64,18 +65,33 @@ const createWindow = () => {
   })
 
   // Emitted when the window is closed.
-  mainWindow.on('closed', () => {
+  mainWindow.on('close', () => {
     // Dereference the window object, usually you would store windows
     // in an array if your app supports multi windows, this is the time
     // when you should delete the corresponding element.
     mainWindow = null
+    menu = null
   })
+
+  menu = new MenuBuilder(mainWindow)
+  menu.buildMenu()
+}
+
+const minimizeWindow = () => {
+  mainWindow.setFullScreen(false)
 }
 
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
 // Some APIs can only be used after this event occurs.
-app.on('ready', createWindow)
+app.on('ready', () => {
+  createWindow()
+
+  // Register a 'CommandOrControl+X' shortcut listener.
+  globalShortcut.register('Escape', () => {
+    minimizeWindow()
+  })
+})
 
 // Quit when all windows are closed.
 app.on('window-all-closed', () => {
@@ -86,11 +102,16 @@ app.on('window-all-closed', () => {
   }
 })
 
-app.on('activate', async () => {
+app.on('activate', () => {
   // On macOS it's common to re-create a window in the app when the
   // dock icon is clicked and there are no other windows open.
-  if (mainWindow === null) await createWindow()
+  if (mainWindow === null) {
+    createWindow()
+  }
+})
 
-  const menuBuilder = new MenuBuilder(mainWindow)
-  menuBuilder.buildMenu()
+app.on('will-quit', () => {
+  // Unregister all events when leaving the app
+  globalShortcut.unregister('Escape')
+  globalShortcut.unregisterAll()
 })

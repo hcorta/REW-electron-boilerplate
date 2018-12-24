@@ -1,8 +1,8 @@
 const { app, Menu, shell, BrowserWindow } = require('electron')
 
 class MenuBuilder {
-  constructor () {
-    this.mainWindow = BrowserWindow
+  constructor (mainWindow) {
+    this.mainWindow = mainWindow
   }
 
   buildMenu () {
@@ -241,13 +241,13 @@ class MenuBuilder {
         submenu: [
           {
             label: 'Learn More',
-            click() {
+            click () {
               shell.openExternal('http://electron.atom.io')
             }
           },
           {
             label: 'Documentation',
-            click() {
+            click () {
               shell.openExternal(
                 'https://github.com/atom/electron/tree/master/docs#readme'
               )
@@ -255,13 +255,13 @@ class MenuBuilder {
           },
           {
             label: 'Community Discussions',
-            click() {
+            click () {
               shell.openExternal('https://discuss.atom.io/c/electron')
             }
           },
           {
             label: 'Search Issues',
-            click() {
+            click () {
               shell.openExternal('https://github.com/atom/electron/issues')
             }
           }

@@ -1,6 +1,6 @@
 {
   "name": "rew-electron-boilerplate",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "A minimal jump-start boilerplate based on Electron + Webpack + React for building Cross-Platform Desktop Apps",
   "license": "MIT",
   "private": false,
@@ -21,12 +21,23 @@
     "webpack"
   ],
   "main": "main.js",
+  "build": {
+    "appId": "com.electron.rew-electron-boilerplate",
+    "mac": {
+      "category": "your.app.category.type"
+    },
+    "directories": {
+      "app": "./dist",
+      "output": "./demo"
+    }
+  },
   "scripts": {
     "prod": "webpack --mode production --config config/webpack.prod.js && electron --noDevServer .",
     "start": "webpack-dev-server --hot --host 0.0.0.0 --config config/webpack.dev.js --mode development",
     "build": "webpack --config config/webpack.prod.js --mode production",
     "test": "yarn run build",
-    "package": "yarn run build && electron-packager . electronApp  --out=builds/osx --platform=darwin --arch=x64 --icon=public/img/app-icon/mac/app.icns --overwrite"
+    "package": "yarn run build && electron-packager . electronApp  --out=builds/osx --platform=darwin --arch=x64 --icon=public/img/app-icon/mac/app.icns --overwrite",
+    "demo": "yarn run build && electron-builder"
   },
   "dependencies": {
     "react": "^16.7.0",
@@ -42,6 +53,7 @@
     "babili-webpack-plugin": "^0.1.2",
     "css-loader": "^1.0.0",
     "electron": "^4.0.0",
+    "electron-builder": "^20.38.4",
     "electron-packager": "^12.2.0",
     "eslint": "^5.10.0",
     "eslint-config-standard": "^12.0.0",
