@@ -7,7 +7,7 @@ class App extends React.Component {
   render () {
     return (
       <div id="App">
-        <img id="App-logo" src={Logo}></img>
+        <img src={Logo}></img>
         <h1>REW-Electron-Boilerplate</h1>
         <p>A jump-start boilerplate based on Electron + Webpack + React for building Cross-Platform Desktop Apps</p>
       </div>

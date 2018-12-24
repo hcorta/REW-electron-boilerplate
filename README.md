@@ -4,7 +4,6 @@
 </div>
 
 <div align="center" style="display: flex; justify-content: space-evenly">
-
   [![Build Status](https://travis-ci.com/hcorta/REW-electron-boilerplate.svg?branch=master)](https://travis-ci.com/hcorta/REW-electron-boilerplate)
   [![dependencies Status](https://david-dm.org/hcorta/REW-electron-boilerplate/status.svg)](https://david-dm.org/hcorta/REW-electron-boilerplate)
   [![devDependencies Status](https://david-dm.org/hcorta/REW-electron-boilerplate/dev-status.svg)](https://david-dm.org/hcorta/REW-electron-boilerplate?type=dev)

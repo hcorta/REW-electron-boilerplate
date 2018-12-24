@@ -4,7 +4,7 @@
 const { app, BrowserWindow, globalShortcut } = require('electron')
 const path = require('path')
 const url = require('url')
-const MenuBuilder = require('./electron/menu')
+const MenuBuilder = require('./menu')
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.

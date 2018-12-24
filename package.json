@@ -20,7 +20,7 @@
     "react",
     "webpack"
   ],
-  "main": "main.js",
+  "main": "electron/main.js",
   "build": {
     "appId": "com.electron.rew-electron-boilerplate",
     "mac": {
