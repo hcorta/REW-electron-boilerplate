@@ -1,18 +1,17 @@
 import './App.css'
 import Logo from '../public/img/logo.png'
+import ReactIcon from '../public/img/react-icon.png'
 
-import React from 'react'
+import React, { Component } from 'react'
 
-class App extends React.Component {
+export default class App extends Component {
   render () {
     return (
       <div id="App">
-        <img src={Logo}></img>
-        <h1>REW-Electron-Boilerplate</h1>
-        <p>A jump-start boilerplate based on Electron + Webpack + React for building Cross-Platform Desktop Apps</p>
+        <img src={ReactIcon} id="App-logo"/>
+        <p>Enjoy your development!</p>
+        {/* <img src={Logo} style={{ width: '80%' }}/> */}
       </div>
     )
   }
 }
-
-export default App
