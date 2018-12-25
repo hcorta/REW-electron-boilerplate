@@ -17,20 +17,23 @@
 
 <br>
 
-<p align="center" style="box-shadow:0px 4px 10px rgba(0,0,0,0.5)">
-  <img src="public/img/screenshot.png" width="100%" align="center">
-</p>
+<div align="center" style="box-shadow:0px 4px 10px rgba(0,0,0,0.5)">
+  <img src="public/img/screenshot.png" width="100%">
+</div>
 
 <br>
 
+***
+
 ## Table of Contents 📚
 
-* [Overview](#overview)
-* [Install](#install)
-* [Start Development](#start-development)
-* [Packaging for Production](#packaging-for-production)
-* [Code of Conduct](#code-of-conduct)
-* [License](#license)
+* [Overview](#overview-📜)
+* [Install](#install-⚙️)
+* [Starting Development](#starting-development-🔨)
+* [Packaging for Production](#packaging-for-production-📦)
+* [Contributing](#contributing-🖇)
+* [Code of Conduct](#code-of-conduct-📐)
+* [License](#license-📝)
 
 <br>
 
@@ -58,18 +61,20 @@ cd YOUR_PROJECT_NAME
 Install dependencies (**`yarn`** *recommended*):
 
 ```
-yarn or yarn install
+yarn
 ```
+
+...and, you're ready to go!
 
 <br>
 
-After completing this steps, you will find the following project structure. No configuration needed, just the files you need to build your app.
+The basic structure of the project is provided in the following way. No configuration needed, just the files you need to build your app.
 
 ```
 YOUR_PROJECT_NAME
 ├── config/
 │   ├── .babelrc
-│   ├── .eslintrc
+│   ├── .eslintrc           //List of rules used by JSHint to detect errors and potential problems in JavaScript.
 │   ├── postcss.config.js
 │   ├── webpack.dev.js
 │   └── webpack.prod.js
@@ -79,11 +84,11 @@ YOUR_PROJECT_NAME
 ├── public/
 │   ├── docs/
 │   └── img/
-├── src/
+├── src/                     //Files within this folder get transpiled or compiled
 │   ├── App.css
 │   ├── App.js
 │   └── index.js
-├── .gitignore
+├── .gitignore               //List of files that we don't want Git to track.
 ├── .travis.yml
 ├── LICENSE
 ├── package.json
@@ -91,31 +96,39 @@ YOUR_PROJECT_NAME
 └── yarn.lock
 ```
 
-...and you're ready to go!
-
 <br>
 
 ## Starting Development 🔨
 
-Start the app in the dev environment. This starts the renderer process in hot-module-replacement mode and starts a webpack dev server that sends hot updates to the renderer process:
+To start the app in development environment run:
 
 ```
 yarn start
 ```
 
+That' all! This starts the renderer process in hot-module-replacement mode and starts a webpack dev server watching for changes that sends hot updates to the renderer process.
+
 <br>
 
 ## Packaging for Production 📦
 
-To package the app for the local platform:
+To package the app for the local platform in `/builds`:
 
 ```
 yarn package
 ```
 
+In order to manually build into `/dist` your App, you may run:
+
+```
+yarn build
+```
+
 <br>
 
 ## Contributing 🖇
+
+No one’s perfect. If you’ve found any errors, want to suggest enhancements, or expand on a topic, please feel free to open an Issue or collaborate by PR.
 
 **Working on your first Pull Request?** You can learn how from this *free* series [How to Contribute to an Open Source Project on GitHub](https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github)
 
@@ -129,4 +142,4 @@ yarn package
 
 ## License 📝
 
-**REW-electron-boilerplate** is open source software licensed as MIT © [Hugo Corta](https://github.com/hcorta).
+**rew-electron-boilerplate** is open source software licensed as MIT © [Hugo Corta](https://github.com/hcorta).
