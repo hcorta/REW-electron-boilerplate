@@ -15,6 +15,8 @@
 
 </div>
 
+<br>
+
 <p align="center" style="box-shadow:0px 4px 10px rgba(0,0,0,0.5)">
   <img src="public/img/screenshot.png" width="100%" align="center">
 </p>

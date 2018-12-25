@@ -25,8 +25,8 @@
     "prod": "webpack --mode production --config config/webpack.prod.js && electron --noDevServer .",
     "start": "webpack-dev-server --hot --host 0.0.0.0 --config config/webpack.dev.js --mode development",
     "build": "BABEL_ENV=production webpack --config config/webpack.prod.js --mode production",
-    "test": "yarn run build",
-    "package": "electron-packager . electronApp  --out=builds/osx --platform=darwin --arch=x64 --icon=public/img/app/icon/mac/app.icns --overwrite"
+    "test": "yarn build",
+    "package": "yarn build && electron-packager . electronApp  --out=builds/osx --platform=darwin --arch=x64 --icon=public/img/app/icon/mac/app.icns --overwrite"
   },
   "dependencies": {
     "react": "^16.7.0",
