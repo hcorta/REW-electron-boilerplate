@@ -7,9 +7,9 @@
 
 <div align="center">
 
-  [![Build Status](https://travis-ci.com/hcorta/REW-electron-boilerplate.svg?branch=master)](https://travis-ci.com/hcorta/REW-electron-boilerplate)
-  [![dependencies Status](https://david-dm.org/hcorta/REW-electron-boilerplate/status.svg)](https://david-dm.org/hcorta/REW-electron-boilerplate)
-  [![devDependencies Status](https://david-dm.org/hcorta/REW-electron-boilerplate/dev-status.svg)](https://david-dm.org/hcorta/REW-electron-boilerplate?type=dev)
+  [![Build Status](https://travis-ci.com/hcorta/rew-electron-boilerplate.svg?branch=master)](https://travis-ci.com/hcorta/rew-electron-boilerplate)
+  [![dependencies Status](https://david-dm.org/hcorta/rew-electron-boilerplate/status.svg)](https://david-dm.org/hcorta/rew-electron-boilerplate)
+  [![devDependencies Status](https://david-dm.org/hcorta/rew-electron-boilerplate/dev-status.svg)](https://david-dm.org/hcorta/rew-electron-boilerplate?type=dev)
   [![License MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
   [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 

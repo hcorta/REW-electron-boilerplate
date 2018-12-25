@@ -6,7 +6,7 @@
   "private": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/hcorta/REW-electron-boilerplate"
+    "url": "https://github.com/hcorta/rew-electron-boilerplate"
   },
   "homepage": "",
   "author": {
@@ -26,7 +26,7 @@
     "start": "webpack-dev-server --hot --host 0.0.0.0 --config config/webpack.dev.js --mode development",
     "build": "BABEL_ENV=production webpack --config config/webpack.prod.js --mode production",
     "test": "yarn run build",
-    "package": "yarn run build && electron-packager . electronApp  --out=builds/osx --platform=darwin --arch=x64 --icon=public/img/app/icon/mac/app.icns --overwrite"
+    "package": "electron-packager . electronApp  --out=builds/osx --platform=darwin --arch=x64 --icon=public/img/app/icon/mac/app.icns --overwrite"
   },
   "dependencies": {
     "react": "^16.7.0",
