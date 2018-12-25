@@ -23,7 +23,7 @@
 
 <br>
 
-## Table of Contents
+## Table of Contents 📚
 
 * [Overview](#overview)
 * [Install](#install)
@@ -34,16 +34,19 @@
 
 <br>
 
-## Overview
-Modern web development practices today require a lot of setup with things like webpack to bundle your code, babel for transpiling, eslint for linting, and so much more that the list just goes on. Unfortunately when creating electron applications, all of that setup just became much more difficult. 
+## Overview 📜
 
-The primary aim of electron-webpack is to eliminate all preliminary setup with one simple install so you can get back to developing your application.
+Modern web development technologies have evolved incredibly fast in the last few years in such a way that we can now create cross-platform desktop apps using resources originally thought for web browsers.
+
+Nevertheless, this usually require a lot of setup to make things work: Webpack to bundle your code, Babel for transpiling, Eslint for linting...  Not to mention that when creating Electron applications, all of that setup just becomes more difficult.
+
+The primary aim of *rew-electron-boilerplate* is to eliminate all preliminary setup with one simple install so you can focus in developing your application.
 
 <br>
 
-## Install
+## Install ⚙️
 
-Create a directory of your choice, and download the repo using git clone:
+Download the repo using git clone in a directory of your choice:
 
 ```
 git clone https://github.com/hcorta/rew-electron-boilerplate YOUR_PROJECT_NAME
@@ -52,10 +55,10 @@ cd YOUR_PROJECT_NAME
 
 <br>
 
-And then install the dependencies with **`yarn`** *(recommended)*.
+Install dependencies (**`yarn`** *recommended*):
 
 ```
-yarn
+yarn or yarn install
 ```
 
 <br>
@@ -64,31 +67,35 @@ After completing this steps, you will find the following project structure. No c
 
 ```
 YOUR_PROJECT_NAME
-├── .babel.rc
-├── .eslintrc
+├── config/
+│   ├── .babelrc
+│   ├── .eslintrc
+│   ├── postcss.config.js
+│   ├── webpack.dev.js
+│   └── webpack.prod.js
+├── electron/
+│   ├── main.js
+│   └── menu.js
+├── public/
+│   ├── docs/
+│   └── img/
+├── src/
+│   ├── App.css
+│   ├── App.js
+│   └── index.js
 ├── .gitignore
 ├── .travis.yml
 ├── LICENSE
-├── main.js
 ├── package.json
-├── postcss.config.js
 ├── README.md
 └── yarn.lock
-├── config/
-│   ├── webpack.dev.js
-│   └── webpack.prod.js
-├── dist/
-│   ├── jquery.boilerplate.js
-│   └── jquery.boilerplate.min.js
-└── src
-    ├── App.css
-    ├── App.js
-    └── index.js
 ```
+
+...and you're ready to go!
 
 <br>
 
-## Starting Development
+## Starting Development 🔨
 
 Start the app in the dev environment. This starts the renderer process in hot-module-replacement mode and starts a webpack dev server that sends hot updates to the renderer process:
 
@@ -98,7 +105,7 @@ yarn start
 
 <br>
 
-## Packaging for Production
+## Packaging for Production 📦
 
 To package the app for the local platform:
 
@@ -108,17 +115,18 @@ yarn package
 
 <br>
 
-## Contributing
+## Contributing 🖇
+
 **Working on your first Pull Request?** You can learn how from this *free* series [How to Contribute to an Open Source Project on GitHub](https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github)
 
 <br>
 
-## Code of Conduct
+## Code of Conduct 📐
 
 [Contributor Code of Conduct](public/docs/CODE_OF_CONDUCT.md). By participating in this project you agree to abide by its terms.
 
 <br>
 
-## License
+## License 📝
 
 **REW-electron-boilerplate** is open source software licensed as MIT © [Hugo Corta](https://github.com/hcorta).
