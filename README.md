@@ -1,3 +1,5 @@
+# REW Electron Boilerplate
+
 <div align="center">
   <img src="public/img/rew-header.png" width="100%" align="center">
   <p>A minimal jump-start boilerplate based on Electron + Webpack + React for building Cross-Platform Desktop Apps</p>
