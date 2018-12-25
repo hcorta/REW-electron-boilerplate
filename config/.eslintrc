@@ -50,7 +50,7 @@
   "rules": {
     "max-len": [
       2,
-      200,
+      100,
       2
     ],
     "object-curly-spacing": [

@@ -11,7 +11,18 @@ module.exports = {
     rules: [
       {
         test: /\.css$/,
-        use: [{ loader: 'style-loader' }, { loader: 'css-loader' }, { loader: 'postcss-loader' }],
+        use: [
+          { loader: 'style-loader' },
+          { loader: 'css-loader' },
+          { loader: 'postcss-loader',
+            options: {
+              ident: 'postcss',
+              config: {
+                path: './config'
+              }
+            }
+          }
+        ],
         include: defaultInclude
       },
       {
@@ -21,7 +32,9 @@ module.exports = {
         use: {
           loader: 'eslint-loader',
           options: {
-            emitWarning: true
+            emitWarning: true,
+            configFile: './config/.eslintrc'
+
           }
         }
       },
@@ -53,9 +66,9 @@ module.exports = {
   target: 'electron-renderer',
   plugins: [
     new HtmlWebpackPlugin(),
-    new webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify('development')
-    })
+    // new webpack.DefinePlugin({
+    //   'process.env.NODE_ENV': JSON.stringify('development')
+    // })
   ],
   devtool: 'cheap-source-map',
   devServer: {
