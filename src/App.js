@@ -7,7 +7,6 @@ export default class App extends Component {
   render () {
     return (
       <div id="App">
-        <img src={RewLogo}></img>
         <p>Enjoy your development!</p>
       </div>
     )
